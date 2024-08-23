@@ -16,6 +16,10 @@
 		E9B8A1FB2C78B90C0078DE61 /* TelasSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8A1FA2C78B90C0078DE61 /* TelasSwiftTests.swift */; };
 		E9B8A2052C78B90C0078DE61 /* TelasSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8A2042C78B90C0078DE61 /* TelasSwiftUITests.swift */; };
 		E9B8A2072C78B90C0078DE61 /* TelasSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8A2062C78B90C0078DE61 /* TelasSwiftUITestsLaunchTests.swift */; };
+		E9B8A21A2C78BADF0078DE61 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8A2192C78BADF0078DE61 /* BlueViewController.swift */; };
+		E9B8A21C2C78BAF10078DE61 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8A21B2C78BAF10078DE61 /* GreenViewController.swift */; };
+		E9B8A21E2C78BB010078DE61 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8A21D2C78BB010078DE61 /* RedViewController.swift */; };
+		E9B8A2202C78C1E90078DE61 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8A21F2C78C1E90078DE61 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E9B8A2002C78B90C0078DE61 /* TelasSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelasSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B8A2042C78B90C0078DE61 /* TelasSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelasSwiftUITests.swift; sourceTree = "<group>"; };
 		E9B8A2062C78B90C0078DE61 /* TelasSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelasSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9B8A2192C78BADF0078DE61 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		E9B8A21B2C78BAF10078DE61 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		E9B8A21D2C78BB010078DE61 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		E9B8A21F2C78C1E90078DE61 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +107,8 @@
 		E9B8A1E22C78B9080078DE61 /* TelasSwift */ = {
 			isa = PBXGroup;
 			children = (
-				E9B8A1E32C78B9080078DE61 /* AppDelegate.swift */,
-				E9B8A1E52C78B9080078DE61 /* SceneDelegate.swift */,
-				E9B8A1E72C78B9080078DE61 /* ViewController.swift */,
-				E9B8A1E92C78B9080078DE61 /* Main.storyboard */,
-				E9B8A1EC2C78B90B0078DE61 /* Assets.xcassets */,
-				E9B8A1EE2C78B90B0078DE61 /* LaunchScreen.storyboard */,
+				E9B8A2142C78B99A0078DE61 /* Source */,
+				E9B8A2132C78B9830078DE61 /* Resource */,
 				E9B8A1F12C78B90B0078DE61 /* Info.plist */,
 			);
 			path = TelasSwift;
@@ -125,6 +129,46 @@
 				E9B8A2062C78B90C0078DE61 /* TelasSwiftUITestsLaunchTests.swift */,
 			);
 			path = TelasSwiftUITests;
+			sourceTree = "<group>";
+		};
+		E9B8A2132C78B9830078DE61 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E9B8A1E32C78B9080078DE61 /* AppDelegate.swift */,
+				E9B8A1E52C78B9080078DE61 /* SceneDelegate.swift */,
+				E9B8A1E72C78B9080078DE61 /* ViewController.swift */,
+				E9B8A1E92C78B9080078DE61 /* Main.storyboard */,
+				E9B8A1EC2C78B90B0078DE61 /* Assets.xcassets */,
+				E9B8A1EE2C78B90B0078DE61 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E9B8A2142C78B99A0078DE61 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E9B8A2172C78B9C90078DE61 /* Controller */,
+				E9B8A2182C78B9D00078DE61 /* Coordinator */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E9B8A2172C78B9C90078DE61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9B8A2192C78BADF0078DE61 /* BlueViewController.swift */,
+				E9B8A21B2C78BAF10078DE61 /* GreenViewController.swift */,
+				E9B8A21D2C78BB010078DE61 /* RedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9B8A2182C78B9D00078DE61 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E9B8A21F2C78C1E90078DE61 /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +304,11 @@
 			files = (
 				E9B8A1E82C78B9080078DE61 /* ViewController.swift in Sources */,
 				E9B8A1E42C78B9080078DE61 /* AppDelegate.swift in Sources */,
+				E9B8A21A2C78BADF0078DE61 /* BlueViewController.swift in Sources */,
 				E9B8A1E62C78B9080078DE61 /* SceneDelegate.swift in Sources */,
+				E9B8A21E2C78BB010078DE61 /* RedViewController.swift in Sources */,
+				E9B8A21C2C78BAF10078DE61 /* GreenViewController.swift in Sources */,
+				E9B8A2202C78C1E90078DE61 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
